@@ -13,13 +13,19 @@ async function scrapeData() {
     // Extraer nombres, precios y enlaces de los productos
     const products = await page.evaluate(() => {
         return Array.from(document.querySelectorAll(".product")).map(item => {
-            const titleElement = item.querySelector("a[href*='/producto/']");
+            const titleElement = item.querySelector(".woocommerce-loop-product__title");
             const title = titleElement ? titleElement.innerText.trim() : "No disponible";
+
             const priceElement = item.querySelector(".woocommerce-Price-amount bdi");
             const price = priceElement ? priceElement.innerText.trim() : "No disponible";
-            const link = titleElement ? titleElement.href : "No disponible";
-            
-            return { title, price, link };
+
+            const linkElement = item.querySelector("a");
+            const link = linkElement ? linkElement.href : "No disponible";
+
+            const imageElement = item.querySelector("img");
+            const image = imageElement ? imageElement.src : "No disponible";
+
+            return { title, price, link, image };
         });
     });
 
