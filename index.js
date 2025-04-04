@@ -10,4 +10,4 @@ await page.goto("https://multimax.com.ve/");
 await browser.close();
 }
 
-openWebPage();
+//openWebPage();
