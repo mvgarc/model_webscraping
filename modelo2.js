@@ -15,7 +15,7 @@ import fs from "fs";
             console.log(`📄 Extrayendo datos de la página ${pagina}...`);
 
             // Esperar a que los productos carguen
-            await page.waitForSelector(".v-card", { timeout: 10000 });
+            await page.waitForSelector(".v-card", { timeout: 100000 });
 
             // Extraer los datos de los productos
             const productosPagina = await page.evaluate(() => {
