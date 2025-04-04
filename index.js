@@ -22,3 +22,4 @@ await page.goto("https://multimax.com.ve/");
 await page.screenshot({ path: "example.png", fullPage: true });
 await browser.close();
 }
+captureScreenshot()
