@@ -55,7 +55,7 @@ node modelo2.js
 
 - Abre el sitio `https://X` con el navegador visible.
 - Escucha las respuestas de red que contienen `/productos`.
-- Guarda los datos en `productos_daka.json`.
+- Guarda los datos en `productos_2.json`.
 
 ## ⚠️ Consideraciones
 
