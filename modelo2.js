@@ -6,7 +6,7 @@ import fs from "fs";
         const browser = await puppeteer.launch({ headless: false }); // Abre Puppeteer con UI visible para depuración
         const page = await browser.newPage();
 
-        await page.goto("https://tiendasdaka.com/producto/list/0/1000000", { waitUntil: "networkidle2" });
+        await page.goto("https://X", { waitUntil: "networkidle2" });
 
         let productos = [];
 
