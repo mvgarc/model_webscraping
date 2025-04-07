@@ -32,7 +32,7 @@ import fs from "fs";
 
         // Guardar los datos en JSON
         fs.writeFileSync("productos_daka.json", JSON.stringify(productos, null, 2));
-        console.log("✅ Datos guardados en productos_daka.json");
+        console.log("✅ Datos guardados en productos_2.json");
 
         await browser.close();
     } catch (error) {
