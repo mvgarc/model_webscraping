@@ -13,7 +13,7 @@ import fs from "fs";
             console.log(`📄 Extrayendo datos de la página ${i}...`);
 
             // Abre la página correspondiente
-            const url = `https://multimax.com.ve/productos/page/${i}/`;
+            const url = `https://X/${i}/`;
             await page.goto(url, { waitUntil: "networkidle2" });
 
             // Espera a que los productos se carguen
