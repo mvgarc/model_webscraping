@@ -6,7 +6,7 @@ Este repositorio contiene dos scripts desarrollados en Node.js utilizando Puppet
 - `index.js`: Automatiza la navegación y extracción de productos a través de múltiples páginas del catálogo.
 - `modelo2.js`: Captura datos directamente desde las respuestas de red (network response), ideal para sitios que cargan contenido dinámico mediante APIs.
 - `productos.json`: Archivo generado con los productos extraídos por `index.js`.
-- `productos.json`: Archivo generado por `modelo2.js` al interceptar respuestas de red.
+- `productos_2.json`: Archivo generado por `modelo2.js` al interceptar respuestas de red.
 
 ## 🚀 Requisitos
 
